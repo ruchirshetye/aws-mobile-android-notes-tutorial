@@ -20,6 +20,9 @@ buildscript {
         google()
     }
     project.logger.lifecycle('my message visible by default')
+    project.logger.lifecycle($gradle_version)
+    project.logger.lifecycle(System.getenv('AWS_DEFAULT_REGION'))
+    println  System.getenv('AWS_DEFAULT_REGION')
     dependencies {
         classpath "com.android.tools.build:gradle:$gradle_version"
 
