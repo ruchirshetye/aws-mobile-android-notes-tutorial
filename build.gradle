@@ -23,6 +23,7 @@ buildscript {
     /*project.logger.lifecycle($gradle_version)*/
     project.logger.lifecycle(System.getenv('AWS_DEFAULT_REGION'))
     println  System.getenv('AWS_DEFAULT_REGION')
+    project.logger.lifecycle(System.getenv('developerIP'))
     dependencies {
         classpath "com.android.tools.build:gradle:$gradle_version"
 
