@@ -19,7 +19,7 @@ buildscript {
         jcenter()
         google()
     }
-
+    project.logger.lifecycle('my message visible by default')
     dependencies {
         classpath "com.android.tools.build:gradle:$gradle_version"
 
